@@ -16,28 +16,13 @@ header('Content-type: text/html');
           		foreach ($row as $key => $value) {     
             			$pablo[$key] = $value;
           		}
-			
+			//el isset estaba repetido 2 veces
 		if (isset($pablo['Id']){
 			echo '</p>Incidencia: '.$pablo['Id].'</p>;
 		}else{
 			echo '</p>ERROR!!!, No existe esa incidencia ó ha llegado al final de la tabla</p>';
 		};
-		
-			
-			
-        	}  
-	if ( isset($pablo['Id'])){
-		echo '</p>Incidencia: '.$pablo['Id'].'</p>';
-	}else{
-		echo'</p>ERROR!!!, No existe esa incidencia ó ha llegado al final de la tabla</p>';
-	};
-    		$r1->close();
-		
-		if ( isset($pablo['id'])){
-		     echo '</p>Incidencia: '.$pablo['id'].'</p>';
-		}else{ 
-			echo '</p>ERROR!!!, No existe esa incidencia ó ha llegado al final de la tabla </p>';
-			};
+	
 		
 		echo '<!DOCTYPE html>
 		<html>
@@ -89,15 +74,9 @@ header('Content-type: text/html');
        		while($row = $r1->fetch_assoc()){
           		foreach ($row as $key => $value) {     
             			$pablo[$key] = $value;
-          		}
+          
 			
-			if (isset($pablo['Id']){
-			echo '</p>Incidencia: '.$pablo['Id].'</p>;
-		}else{
-			echo '</p>ERROR!!!, No existe esa incidencia ó ha llegado al final de la tabla</p>';
-		};
-			
-			
+			//el isset estaba repetido 1 vez
 			
 			
         	}  
